@@ -42,7 +42,7 @@ fun HTML.workspaceForm(pairs: List<Pair<String, Boolean>>, message: DIV.() -> Un
         }
         p { +"To get table: 1) Enter your first and last name; 2) Select table; 3) Press 'Save'." }
         p { +"If you want to delete a person from the table: 1) Select table; 2) Press 'Clear'." }
-        p { +"Note: onMouseOver to show 'Where do you sit here?'" }
+        p { +"Note: onMouseOver to show 'Who is sitting here?'" }
 
         form {
             method = FormMethod.post

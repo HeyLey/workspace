@@ -88,10 +88,10 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
 
 }
-
+/*
 kapt {
     generateStubs = true
-}
+} */
 
 kotlin.sourceSets["main"].kotlin.srcDirs("src")
 kotlin.sourceSets["test"].kotlin.srcDirs("test")

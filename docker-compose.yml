@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+
+  workspace:
+    image: workspace:latest
+    ports:
+      - "80:8080"
+    secrets:
+      - source: workspace_config
+        target: /config.json
+    networks:
+      default:
+      db:
+    environment:
+      - DB_HOST=bigsister_db
+      - CONFIG_DIR=./.
+
+  workspace_db:
+    image: mongo:latest
+    networks:
+      db:
+        aliases:
+          - "db"
+
+networks:
+  default:
+  db:
+
+volumes:
+  config:
+  db:
+
+secrets:
+  workspace_config:
+    file: ./config.json

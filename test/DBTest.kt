@@ -1,5 +1,6 @@
 package lambda.bigsister
 
+/*
 import io.ktor.application.Application
 import io.ktor.server.testing.TestApplicationCall
 import io.ktor.server.testing.withTestApplication
@@ -80,4 +81,4 @@ class DBTest {
 
     }
 
-}
+} */

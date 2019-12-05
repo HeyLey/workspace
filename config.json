@@ -1,0 +1,7 @@
+{
+  "serverName": "http://localhost:8080",
+  "mongoConfig": {
+    "address": "localhost",
+    "port": 27017
+  }
+}

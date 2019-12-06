@@ -1,12 +1,13 @@
 package lambda.bigsister
 
-/*
+
 import io.ktor.application.Application
 import io.ktor.server.testing.TestApplicationCall
 import io.ktor.server.testing.withTestApplication
 import kotlinx.coroutines.runBlocking
 import iga.workspace.models.*
 import iga.workspace.module
+import io.ktor.locations.KtorExperimentalLocationsAPI
 import org.hamcrest.CoreMatchers.*
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.*
@@ -28,6 +29,7 @@ class DBTest {
         )
 
     @BeforeEach
+    @KtorExperimentalLocationsAPI
     fun initDb() {
         dbVar = runBlocking {
             initDatabase("workspace_test")
@@ -43,6 +45,7 @@ class DBTest {
 
     @DisplayName("Session creating")
     @Test
+    @KtorExperimentalLocationsAPI
     fun testSession() {
         withTestApplication({ module() }) {
             val db = dbVar!!
@@ -81,4 +84,4 @@ class DBTest {
 
     }
 
-} */
+}

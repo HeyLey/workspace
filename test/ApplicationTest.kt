@@ -1,5 +1,5 @@
 package lambda.bigsister
-/*
+
 import iga.workspace.module
 import io.ktor.http.HttpMethod
 import io.ktor.http.HttpStatusCode
@@ -23,4 +23,4 @@ class ApplicationTest {
             }
         }
     }
-} */
+}

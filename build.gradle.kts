@@ -103,7 +103,7 @@ sourceSets["test"].resources.srcDirs("testresources")
 val test by tasks.getting(Test::class) {
     useJUnitPlatform { }
 }
-/*
+
 
 tasks.withType<JacocoReport> {
     reports {
@@ -182,5 +182,5 @@ val testCoverage by tasks.registering {
         println("Covered lines " +  covered)
         println("Total " + "%.2f".format(percentage) + "%")
     }
-} */
+}
 
